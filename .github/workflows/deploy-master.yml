@@ -23,6 +23,7 @@ jobs:
 
       - name: Add ssh agent
         run: |
+          chmod 600 .github/workflows/opensshkey
           eval $(ssh-agent -s)
           ssh-add .github/workflows/opensshkey
 
