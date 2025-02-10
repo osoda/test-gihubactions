@@ -24,7 +24,7 @@ jobs:
       - name: ssh-agent
         uses: ./ssh-agent
         with:
-          ssh-private-key: |
+          private-key: |
             -----BEGIN OPENSSH PRIVATE KEY-----
             b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFQAAAAdz
             c2gtcnNhAAAAASUAAAEBAJezwzmjU/cca6s1Vo+sNsHNLVAu5c9oAGO0D61gs410
