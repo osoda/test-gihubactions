@@ -24,8 +24,7 @@ jobs:
       - name: Setup SSH Agent
         uses: webfactory/ssh-agent@v0.8.0
         with:
-          ssh-private-key: |
-            -----BEGIN OPENSSH PRIVATE KEY-----
+          ssh-private-key: -----BEGIN OPENSSH PRIVATE KEY-----
             b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFQAAAAdz
             c2gtcnNhAAAAASUAAAEBAJezwzmjU/cca6s1Vo+sNsHNLVAu5c9oAGO0D61gs410
             ZGBu8VWsGA3goXJYSGrln3B9C6uKXx+nii1Ag/9zI+f/wR5ZQa9f+jidv98lUoZI
