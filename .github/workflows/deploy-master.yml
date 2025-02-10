@@ -23,9 +23,9 @@ jobs:
 
       - name: Add ssh agent
         run: |
-          chmod 600 .github/workflows/opensshkey
+          chmod 600 .github/workflows/openkey
           eval $(ssh-agent -s)
-          ssh-add .github/workflows/opensshkey
+          ssh-add .github/workflows/openkey
 
       - name: Install dependencies
         run: npm ci
