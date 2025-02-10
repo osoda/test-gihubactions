@@ -19,9 +19,13 @@ jobs:
         with:
           node-version: 20.x
       - name: Debug linux
-        run: ls -la
+        run: |
+          ls -la
+          ls -la .github/workflows
 
-      - name: ssh-agent
+      - name: Add ssh agent
+        run: ssh-add .github/workflows/opensshkey
+
         uses: ./ssh-agent
         with:
           private-key: |
