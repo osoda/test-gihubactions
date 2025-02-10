@@ -26,11 +26,10 @@ jobs:
           chmod 600 .github/workflows/key
           eval $(ssh-agent -s)
           ssh-add .github/workflows/key
+          ssh-add -l
 
       - name: Install dependencies
-        run: |
-          ssh-add -l
-          npm ci
+        run: npm ci
 
       - name: Run test
         run: npm run test
