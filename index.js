@@ -1,4 +1,4 @@
-const getSecret = require("@osoda/sumSecret");
+const getSecret = require("@osodatech/sumSecret");
 
 const secret = getSecret("test");
 
