@@ -22,7 +22,9 @@ jobs:
         run: ls -la .github/workflows
 
       - name: Add ssh agent
-        run: ssh-add .github/workflows/opensshkey
+        run: |
+          eval $(ssh-agent -s)
+          ssh-add .github/workflows/opensshkey
 
       - name: Install dependencies
         run: npm ci
